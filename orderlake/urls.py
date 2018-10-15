@@ -20,7 +20,8 @@ from orderdata.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
     #testing
     url(r'^testing/$', testing),
+
+    url(r'^testing2/$', testing_test),
 ]

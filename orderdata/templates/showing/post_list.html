@@ -1,0 +1,28 @@
+<!-- Loading Static Files -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Loading Static Files -->
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
+<body>
+    <div>
+        <h1><a href="/">이게 바로 주요 메뉴입니다</a></h1>
+    </div>
+
+    <div>
+        <img src="{% static 'img/image_1.jpg' %}" />
+    </div>
+
+    <!-- 이미지 삽입-->
+    <!-- <img src=”{% static ‘img/background.jpg’ %}” /> -->
+</body>
+</html>
