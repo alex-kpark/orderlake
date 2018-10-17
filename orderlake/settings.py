@@ -55,7 +55,7 @@ ROOT_URLCONF = 'orderlake.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'tfmsaview/templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'orderdata/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
