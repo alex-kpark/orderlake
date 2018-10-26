@@ -161,18 +161,18 @@ def street_download(id, pw):
 
 # 다운로드 실행부분
 def perform_ssobing(request):
-    ssobing_id = 'pineappleshop'
-    ssobing_pw = 'joejoe11!!'
+    ssobing_id = '#id'
+    ssobing_pw = '#pw'
     ssobing_download(ssobing_id, ssobing_pw)
 
 def perform_smartstore(request):
-    smart_id = 'sk_baek0101'
-    smart_pw = 'pineapple@_@_'
+    smart_id = '#id'
+    smart_pw = '#pw'
     smartstore_download(smart_id, smart_pw)
 
 def perform_street(request):
-    street_id = 'pineapples'
-    street_pw = 'rudrud11!!'
+    street_id = '#id'
+    street_pw = '#pw'
     street_download(street_id, street_pw)
 
 # 파일 선택 및 전송 부분
