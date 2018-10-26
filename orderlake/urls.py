@@ -23,4 +23,8 @@ urlpatterns = [
 
     url(r'^scrap_ssobing/', perform_ssobing),
 
+    url(r'^scrap_street/', perform_street),
+
+    url(r'^scrap_smartstore/', perform_smartstore),
+
 ]
