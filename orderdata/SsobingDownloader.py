@@ -17,25 +17,6 @@ import time
 import xlrd
 from collections import OrderedDict
 
-#0 Login
-chrome_options = webdriver.ChromeOptions()
-
-prefs = {
-        "profile.default_content_setting_values.plugins": 1,
-        "profile.content_settings.plugin_whitelist.adobe-flash-player": 1,
-        "profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player": 1,
-        "PluginsAllowedForUrls": "http://www.ssobing.com"
-}
-
-chrome_options.add_experimental_option("prefs",prefs)
-chrome_options.add_argument("--disable-features=EnableEphemeralFlashPermission")
-
-#For OSX
-#chrome_path = '/usr/local/bin/chromedriver'
-chrome_path = 'C:/Users/ALEXa/AppData/Local/Programs/Python/chromedriver.exe'
-
-driver = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
-
 def ssobing_login(id, pw):
     driver.get('http://www.ssobing.com/selleradmin/login/index')
 

@@ -20,8 +20,7 @@ from orderdata.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    
-    url(r'^ssobinglogin/$', login_to_ssobing),
-    
-    url(r'^batch_download/$', batch_downloader),
+
+    url(r'^scrap_ssobing/', perform_ssobing),
+
 ]
